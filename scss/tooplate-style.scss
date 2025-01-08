@@ -331,6 +331,7 @@ strong {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: -1;
+	width: 80%;
 }
 
 .clients__slider-arrow {
@@ -394,8 +395,8 @@ strong {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 103%;
-	left: -16px;
+	width: 84%;
+	left: 80px;
 	position: absolute;
 	top: calc(50% - 26px);
 	z-index: 0;
@@ -532,6 +533,34 @@ strong {
 			color: $text-white;
 		}
 	}
+
+	.footer__contact-kwork {
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+	
+		.footer__contact-kwork-link {
+			svg {
+				width: 100%;
+				height: auto;
+				transition: all .3s;
+				.st0 {
+					fill: #0c0c0d;
+				}
+				.st1 {
+					transition: all .3s;
+				}
+	
+				&:hover {
+					fill: $main-color;
+	
+					.st1 {
+						fill: #FFF;
+					}
+				}
+			}
+		}
+	}
 }
 
 .owl-prev:hover::before {
@@ -548,7 +577,7 @@ strong {
 	padding-bottom: 10px;
 
 
-		&:before {
+	&:before {
 		content: "";
 		background: $button-color;
 		width: 3px;
@@ -556,6 +585,7 @@ strong {
 		position: absolute;
 		left: 38px;
 	}
+
 	&:last-child {
 		&:before {
 			height: 0;
@@ -563,17 +593,19 @@ strong {
 		}
 	}
 }
+
 .timeline-2 {
-	.timeline-wrapper{
+	.timeline-wrapper {
 		&::before {
 			display: none;
 		}
+
 		// .timeline-info {
 		// 	margin-left: auto;
 		// }
 	}
 }
-	
+
 .timeline-yr {
 	background: $button-color;
 	border-radius: 100%;
@@ -591,9 +623,11 @@ strong {
 		line-height: 75px;
 	}
 }
+
 .mb-4-2 {
 	margin-left: 2.5em;
 }
+
 .timeline-info {
 	display: inline-block;
 	vertical-align: top;
@@ -688,22 +722,57 @@ strong {
 	justify-content: center;
 	padding-bottom: 20px;
 }
+
 .footer__contact-tg {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 }
+
 .footer__contact-tg-link {
 	border-radius: 50%;
+
 	svg {
 		width: 100%;
 		height: auto;
 		transition: all .3s;
+
 		&:hover {
 			fill: $main-color;
 		}
 	}
 }
+
+.footer__contact-kwork {
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+
+	.footer__contact-kwork-link {
+		svg {
+			width: 100%;
+			height: auto;
+			transition: all .3s;
+
+			.st0 {
+				fill: #FFF;
+			}
+
+			.st1 {
+				transition: all .3s;
+			}
+
+			&:hover {
+				fill: $main-color;
+
+				.st1 {
+					fill: black;
+				}
+			}
+		}
+	}
+}
+
 // RESPONSIVE STYLES
 @media (min-width: 1270px) {
 	.owl-theme {
@@ -740,13 +809,15 @@ strong {
 	.clients__slide {
 		height: 500px;
 	}
+
 	.timeline-2 {
-		.timeline-wrapper{
+		.timeline-wrapper {
 			.timeline-info {
 				margin-left: auto;
 			}
 		}
 	}
+
 	.mb-4-2 {
 		margin-left: auto;
 	}

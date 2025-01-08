@@ -261,6 +261,7 @@ strong {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+  width: 80%;
 }
 
 .clients__slider-arrow {
@@ -317,8 +318,8 @@ strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 103%;
-  left: -16px;
+  width: 84%;
+  left: 80px;
   position: absolute;
   top: calc(50% - 26px);
   z-index: 0;
@@ -425,6 +426,28 @@ strong {
 .dark-mode .owl-carousel .owl-nav button.owl-prev,
 .dark-mode .owl-carousel button.owl-dot {
   color: #ffffff;
+}
+.dark-mode .footer__contact-kwork {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+.dark-mode .footer__contact-kwork .footer__contact-kwork-link svg {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+.dark-mode .footer__contact-kwork .footer__contact-kwork-link svg .st0 {
+  fill: #0c0c0d;
+}
+.dark-mode .footer__contact-kwork .footer__contact-kwork-link svg .st1 {
+  transition: all 0.3s;
+}
+.dark-mode .footer__contact-kwork .footer__contact-kwork-link svg:hover {
+  fill: #ffc200;
+}
+.dark-mode .footer__contact-kwork .footer__contact-kwork-link svg:hover .st1 {
+  fill: #FFF;
 }
 
 .owl-prev:hover::before {
@@ -561,6 +584,29 @@ strong {
 }
 .footer__contact-tg-link svg:hover {
   fill: #ffc200;
+}
+
+.footer__contact-kwork {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+.footer__contact-kwork .footer__contact-kwork-link svg {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+.footer__contact-kwork .footer__contact-kwork-link svg .st0 {
+  fill: #FFF;
+}
+.footer__contact-kwork .footer__contact-kwork-link svg .st1 {
+  transition: all 0.3s;
+}
+.footer__contact-kwork .footer__contact-kwork-link svg:hover {
+  fill: #ffc200;
+}
+.footer__contact-kwork .footer__contact-kwork-link svg:hover .st1 {
+  fill: black;
 }
 
 @media (min-width: 1270px) {
