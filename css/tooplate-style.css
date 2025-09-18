@@ -262,6 +262,7 @@ strong {
   transform: translate(-50%, -50%);
   z-index: -1;
   width: 80%;
+  border-radius: 15px;
 }
 
 .clients__slider-arrow {
@@ -701,4 +702,4 @@ strong {
   .mobile-block {
     display: block;
   }
-}/*# sourceMappingURL=tooplate-style.css.map */
+}
